@@ -1,0 +1,30 @@
+h1 {
+  color: aqua;
+  text-emphasis: none;
+  text-decoration-color: azure;
+}
+
+header {
+  color: blue;
+}
+
+blockquote {
+  text-anchor: middle;
+  background-color: bisque;
+}
+
+.bar-border {
+  background-color: aquamarine;
+  font-size: 24px;
+  width: 160px;
+  height: 50px;
+  box-align: left;
+}
+
+.button {
+  color: black;
+}
+.banner {
+  padding: "15px";
+  background-color: bisque;
+}
