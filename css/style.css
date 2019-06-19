@@ -1,30 +1,38 @@
-h1 {
-  color: aqua;
-  text-emphasis: none;
-  text-decoration-color: azure;
+.block {
+  margin: 30px;
+  padding: 25px;
+  background: rgb(56, 62, 76);
+  color: aliceblue;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+ul {
+  align-content: center;
 }
 
-header {
-  color: blue;
+.button1 {
+  display: inline-block;
+  background-color: rgb(61, 65, 75);
+  font-size: 18px;
+  border: 0.02px solid rgb(150, 150, 150);
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 10px 12px;
+  transition-duration: 0.4s;
+}
+.button1:active {
+  color: aliceblue;
+}
+.button1:hover {
+  background-color: rgb(73, 80, 95);
+  color: white;
+}
+body {
+  font-family: "Lato", sans-serif;
 }
 
-blockquote {
-  text-anchor: middle;
-  background-color: bisque;
-}
-
-.bar-border {
-  background-color: aquamarine;
-  font-size: 24px;
-  width: 160px;
-  height: 50px;
-  box-align: left;
-}
-
-.button {
-  color: black;
-}
-.banner {
-  padding: "15px";
-  background-color: bisque;
+#showcase {
+  text-decoration: aliceblue;
 }

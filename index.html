@@ -4,60 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SinglePageWebsite</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stysheet"
-      href="https://fontawesome.com/icons/phone-square-alt?style=solid"
-    />
-    <script src="./js/index.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Single-Page-Website</title>
   </head>
   <body>
     <header>
-      <h1 id="Free Css">Free Css</h1>
-
-      <div class="bar-border">
-        <a href="index.html" class="button"><i class="fa fa-home"></i></a>
-        <a href="#" class="button"
-          ><i class="fa fa-search" style="font: size 24px;"></i
-        ></a>
-        <a href="#" class="button"><i class="fa fa-envelope"></i></a>
-        <a href="#" class="button"><i class="fa fa-globe"></i></a>
-        <a href="#" class="button"><i class="fa fa-sign-in"></i></a>
-        <a href="#" class="button"><i class="fa fa-phone-square-alt"></i></a>
-        <a href="#" class="button">
-          <i class="fas fa-phone-square-alt"> </i>
-        </a>
-      </div>
-      <blockquote>
-        <h4>Free Css Templates, CssLayouts & More!</h4>
-        <div class="bar  light-grey border"></div>
-      </blockquote>
+      <nav>
+        <ul class="block">
+          <li class="button1">
+            <a href="#showcase" id="showcase"> Home Page. </a>
+          </li>
+          <li class="button1">
+            About US .
+          </li>
+          <li class="button1">
+            Services.
+          </li>
+          <li class="button1">
+            Contact.
+          </li>
+          <li class="button1">
+            External.
+          </li>
+        </ul>
+      </nav>
     </header>
-    <block>
-      <ul>
-        <li>
-          <a href="index.html" style="color: cadetblue">Free CSS Templates.</a>
-        </li>
-        <br />
-        <li>
-          <a href="index.html" style="color: cadetblue"
-            >Premium CSS Templates.</a
-          >
-        </li>
-        <br />
-        <li>
-          <a href="index.html" style="color: cadetblue">Free CSS Layouts.</a>
-        </li>
-        <br />
-        <li>
-          <a href="index.html" style="color: cadetblue">Free CSS Menus.</a>
-        </li>
-      </ul>
-    </block>
+    <main>
+      <mainheader id="showcase" class="grid">
+        <div class="image"><img src="./image/forest.jpg" alt="" /></div>
+        <h1>
+          CONQUER
+        </h1>
+        <h3>
+          Simple Bootstrap Templates.
+        </h3>
+      </mainheader>
+      <mainbody id="body">
+        <section id="section1" class="grid">
+          <ul>
+            <li>
+              <div class="card">
+                <img src="./image/trees.jpg" alt="" />
+                <div class="cardcontent">
+                  <h3 class="cardtitle1">
+                    Bootstrap V3.3.6
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo quisquam deleniti iste voluptatibus, nulla natus! Iusto
+                    consequatur voluptatibus repellat provident.
+                    <button id="buttongreen">Button Green</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="card">
+                <img src="./image/bridge.jpg" alt="" />
+                <div class="cardcontent">
+                  <h3 class="cardtitle2">Responsive Design</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quam nisi magni perferendis? Ullam natus fuga, laudantium
+                    maiores distinctio dolorem temporibus!
+                    <button id="buttondls">See Details..</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="card">
+                <img src="./image/railroad.jpg" alt="" />
+                <div class="cardcontent">
+                  <h3 class="cardtitle3">Parallax Layout.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, eius ratione ipsum tenetur repudiandae debitis
+                    est? Omnis id distinctio dolorum inventore laboriosam veniam
+                    modi optio voluptate sapiente excepturi, alias at!
+                    <button id="buttonred">Button Red..</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="section2" class="grid"></section>
+      </mainbody>
+    </main>
   </body>
 </html>
