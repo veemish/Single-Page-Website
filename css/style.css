@@ -51,11 +51,12 @@ li a:hover {
 .section1 {
   background-image: url(../image/forest.jpg);
   background-size: cover;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  /* background-color: aqua; */
 }
 .section1 h1 {
   font-size: 70px;
@@ -123,7 +124,7 @@ li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:  whitesmoke;
+  color: whitesmoke;
 }
 #service h1 {
   font-size: 50px;
