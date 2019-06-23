@@ -1,72 +1,141 @@
-.block {
-  margin: 30px;
-  padding: 25px;
-  background: rgb(56, 62, 76);
-  color: aliceblue;
-  text-align: center;
-}
-li {
-  display: inline;
-}
-ul {
-  align-content: center;
-}
-
-.button1 {
-  display: inline-block;
-  background-color: rgb(61, 65, 75);
-  font-size: 18px;
-  border: 0.02px solid rgb(150, 150, 150);
-  padding: 15px 30px;
-  text-decoration: none;
-  margin: 10px 12px;
-  transition-duration: 0.4s;
-  color: aliceblue;
-}
-
-.button1:hover {
-  background-color: rgb(73, 80, 95);
-  color: white;
-}
-body {
+* {
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
-#showcase {
-  min-height: 300px;
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
-#showcase.bgimage {
-  position: relative;
-  background-size: contain;
-  background-position: center;
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #383e4c;
+  /* displayed flex property to align content center */
+  /* removed flex because when assigning position fixed the navigation broke but added width to it that fixed everything */
+  position: fixed;
+  width: 100vw;
+}
+
+header .container {
+  width: 60%;
+  margin: 0 auto;
+  /* to set the width of the container div */
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  padding: 15px 25px;
+  border: solid 1px #646d7c;
+  color: aliceblue;
+  font-size: 20px;
+}
+li a:hover {
+  background-color: #49505f;
+}
+
+.section1 {
+  background-image: url(../image/forest.jpg);
+  background-size: cover;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1 h1 {
+  font-size: 70px;
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  /* removed default margin block to remove the uncesssary space between h1 and p */
+  /* normal font weight 700-bold 900-bolder */
+}
+
+.section1 p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#aboutus .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* flex: 1 1 400px; */
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+#aboutus .container article {
+  width: 300px;
+  height: 450px;
+  background: #f2f2f2;
+  margin-bottom: 30px;
+}
+#aboutus .container article img {
+  width: 300px;
+  height: auto;
+}
+/* resizing the width of the  right and left column */
+#aboutus .container article:nth-child(4) img {
+  width: 100%;
+  height: 400px;
+}
+#aboutus .container article:nth-child(5) img {
+  height: 400px;
+  width: 100%;
+}
+#aboutus .container article .about-us {
+  padding: 10px;
+  text-align: justify;
+}
+#aboutus .container article:nth-child(4),
+#aboutus .container article:nth-child(5) {
+  height: 600px;
+  width: 47%;
+}
+/* service background image */
+#service {
+  background-image: url(../image/icedmountain.jpg);
+  height: 50vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:  whitesmoke;
 }
-img {
-  display: block;
-  background-size: 300px 400px;
-}
-#heading {
-  position: absolute;
-  top: 600px;
-  left: 0;
-  width: 100%;
-  font-size: 60px;
-  color: white;
-  margin: 5px 5px;
-  padding: 5px 5px;
+#service h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px #000;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-#content {
-  position: absolute;
-  top: 650px;
-  left: 0;
-  width: 100%;
-  font-size: 24px;
-  color: white;
-  margin: 15px 15px;
-  padding: 12px 12px;
+#service h3 {
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  text-align: center;
 }

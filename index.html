@@ -8,104 +8,230 @@
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Single-Page-Website</title>
+    <title>Single page website</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="block">
-          <li>
-            <a href="#showcase" class="button1"> Home Page. </a>
-          </li>
-          <li>
-            <a href="#section1" class="button1">
-              About US .
-            </a>
-          </li>
-          <li class="button1">
-            Services.
-          </li>
-          <li class="button1">
-            Contact.
-          </li>
-          <li class="button1">
-            External.
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <mainheader id="showcase" class="grid">
-        <div class="bgimage">
-          <img src="./image/forest.jpg" />
-          <h1 id="heading">
-            CONQUER
-          </h1>
-          <h3 id="content">
-            Simple Bootstrap Templates.
-          </h3>
+      <div class="container">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </mainheader>
-      <mainbody id="body">
-        <section id="section1" class="grid">
-          <ul>
-            <li>
-              <div class="card">
-                <img src="./image/trees.jpg" alt="" />
-                <div class="cardcontent">
-                  <h3 class="cardtitle1">
-                    Bootstrap V3.3.6
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo quisquam deleniti iste voluptatibus, nulla natus! Iusto
-                    consequatur voluptatibus repellat provident.
-                    <button id="buttongreen">Button Green</button>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div class="card">
-                <img src="./image/bridge.jpg" alt="" />
-                <div class="cardcontent">
-                  <h3 class="cardtitle2">Responsive Design</h3>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quam nisi magni perferendis? Ullam natus fuga, laudantium
-                    maiores distinctio dolorem temporibus!
-                    <button id="buttondls">See Details..</button>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div class="card">
-                <img src="./image/railroad.jpg" alt="" />
-                <div class="cardcontent">
-                  <h3 class="cardtitle3">Parallax Layout.</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequuntur, eius ratione ipsum tenetur repudiandae debitis
-                    est? Omnis id distinctio dolorum inventore laboriosam veniam
-                    modi optio voluptate sapiente excepturi, alias at!
-                    <button id="buttonred">Button Red..</button>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section id="section2" class="grid">
-          
-        </section>
-      </mainbody>
-    </main>
+        <ul>
+          <li><a href="#">HomePage.</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="">External</a></li>
+        </ul>
+      </div>
+      <!-- on the header section removed class block and replaced it with class container -->
+    </header>
+    <!-- homepage -->
+    <section id="section1" class="section1">
+      <h1>CONQUER</h1>
+      <p>Simple Bootstrap Template</p>
+    </section>
+    <section id="aboutus">
+      <div class="container">
+        <!-- in the homepage section removed grid class and replaced it with class container and did set the back ground image in the its css-->
+        <!-- about us section -->
+        <article>
+          <div class="img"><img src="image/smoke.jpg" alt="" /></div>
+          <div class="about-us">
+            <h3>Bootstrap v3.3.6</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+            <button>Button Green</button>
+          </div>
+        </article>
+        <article>
+          <div class="img"><img src="image/bridge.jpg" alt="" /></div>
+          <div class="about-us">
+            <h3>Responsive Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+            <button>See Details</button>
+          </div>
+        </article>
+        <article>
+          <div class="img">
+            <img src="image/railroad.jpg" alt="" />
+          </div>
+          <div class="about-us">
+            <h3>Parallax Layout</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+            <button>Button Red</button>
+          </div>
+        </article>
+        <article>
+          <div class="img">
+            <img src="image/beach side.jpg" alt="" />
+          </div>
+          <div class="about-us">
+            <h3>Two Comlumn Left Side</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="img"><img src="image/trees.jpg" alt="" /></div>
+          <div class="about-us">
+            <h3>Two Column Right Side</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+            <button>Read More</button>
+          </div>
+        </article>
+      </div>
+      <!-- cards end here -->
+    </section>
+      <!-- ourseervice section -->
+    <section id="service">
+      <h1>Our Services</h1>
+      <h3>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis id,
+        nihil fugit rem voluptates itaque ex! Dicta et placeat harum. Lorem,
+        ipsum dolor.
+      </h3>
+    </section>
+    <!-- ends here -->
+    <section>
+      <div>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>Column One</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>Column two</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>Column three</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>Column Four</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>Column Five</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div><img src="" alt="" /></div>
+          <div>
+            <h3>One Big Column</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates cum iste quis ut commodi, et, hic quae repudiandae
+              reiciendis adipisci sit, aliquid illum. Labore nostrum harum
+              eligendi nobis, quo sequi.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section>
+      <div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+            voluptates delectus pariatur officia animi corporis?
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quas.
+          </p>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message here"
+          ></textarea>
+          <input type="submit" name="send" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <h1>Use it free!</h1>
+        <q>
+          Conquer is free Bootstrap template from TemplateMo website. No
+          backlink is required to use this layout.</q
+        >
+      </div>
+      <div>
+        Copyright &copy; 2045 Company Name| Design: TemplateMo
+      </div>
+    </footer>
   </body>
 </html>
