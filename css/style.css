@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #383e4c;
+  /* displayed flex property to align content center */
+  /* removed flex because when assigning position fixed the navigation broke but added width to it that fixed everything */
+  position: fixed;
+  width: 100vw;
+}
+
+header .container {
+  width: 60%;
+  margin: 0 auto;
+  /* to set the width of the container div */
+}
+
+ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  padding: 15px 25px;
+  border: solid 1px #646d7c;
+  color: aliceblue;
+  font-size: 20px;
+}
+li a:hover {
+  background-color: #49505f;
+}
+
+.section1 {
+  background-image: url(../image/forest.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: aqua; */
+}
+.section1 h1 {
+  font-size: 70px;
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  /* removed default margin block to remove the uncesssary space between h1 and p */
+  /* normal font weight 700-bold 900-bolder */
+}
+
+.section1 p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#aboutus .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* flex: 1 1 400px; */
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+#aboutus .container article {
+  width: 350px;
+  height: 520px;
+  background: #f2f2f2;
+  margin-bottom: 45px;
+}
+#aboutus .container article img {
+  width: 350px;
+  height: auto;
+}
+/* button and headings */
+#aboutus .container article:nth-child(1) h3 {
+  color: #228f32;
+}
+#aboutus .container article:nth-child(2) h3 {
+  color: #1686c1;
+}
+
+#aboutus .container article:nth-child(1) button {
+  background: #228f32;
+  color: #ffffff;
+  width: 190px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 2px;
+  border-radius: 9px;
+  border: solid whitesmoke 1px;
+}
+#aboutus .container article:nth-child(1) button:hover {
+  background: #82dd90;
+  color: #f2f2f2;
+}
+
+#aboutus .container article:nth-child(2) button {
+  background: #1686c1;
+  color: #ffffff;
+  width: 190px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 2px;
+  border-radius: 9px;
+  border: solid whitesmoke 1px;
+}
+#aboutus .container article:nth-child(2) button:hover {
+  background: #89caec;
+  color: #f2f2f2;
+}
+#aboutus .container article:nth-child(3) button {
+  background: #852406;
+  color: #ffffff;
+  width: 190px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 2px;
+  border-radius: 9px;
+  border: solid whitesmoke 1px;
+}
+#aboutus .container article:nth-child(3) button:hover {
+  background: #da613c;
+  color: #f2f2f2;
+}
+#aboutus .container article:nth-child(5) button {
+  background: #ffffff;
+  color: #646d7c;
+  width: 190px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 2px;
+  border-radius: 9px;
+  border: solid #646d7c 1px;
+}
+#aboutus .container article:nth-child(5) button:hover {
+  background: #f2f2f2;
+  color: #646d7c;
+}
+
+/* resizing the width of the  right and left column */
+#aboutus .container article:nth-child(4) img {
+  width: 100%;
+  height: 400px;
+}
+#aboutus .container article:nth-child(5) img {
+  height: 400px;
+  width: 100%;
+}
+#aboutus .container article .about-us {
+  padding: 10px;
+  text-align: justify;
+}
+#aboutus .container article:nth-child(4),
+#aboutus .container article:nth-child(5) {
+  height: 660px;
+  width: 47%;
+}
+
+/* service background image */
+#service {
+  background-image: url(../image/icedmountain.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+#service h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px #000;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#service h3 {
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  text-align: center;
+}
+
+#section2 .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#section2 .container article {
+  width: 250px;
+  height: 470px;
+  background: #f2f2f2;
+}
+
+#section2 .container article img {
+  width: 250px;
+  height: auto;
+}
+#section2 .container article .section-2 {
+  padding: 10px;
+  text-align: justify;
+}
+
+#section2 .container article:nth-child(5) img {
+  width: 100%;
+  height: 400px;
+}
+
+#section2 .container article:nth-child(5) {
+  height: 610px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#section2 .container article button {
+  background: #ffffff;
+  color: #646d7c;
+  border: solid #d4d9e0 1px;
+  border-radius: 10px;
+  padding: 12px;
+  width: 110px;
+  margin: 15px 15px;
+  font-size: 16px;
+}
+
+#section2 .container article button:hover {
+  background: #f2f2f2;
+  color: rgb(72, 73, 75);
+}
+
+#section2 .container article:nth-child(5) button {
+  background: #ffffff;
+  color: #646d7c;
+  border: solid #d4d9e0 1px;
+  border-radius: 10px;
+  padding: 12px;
+  width: 110px;
+  margin: 15px 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#section2 .container article:nth-child(5) button:hover {
+  background: #f2f2f2;
+  color: rgb(72, 73, 75);
+}
+/* contacts form section */
+#contact {
+  background-image: url(../image/greenmountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+#contact .container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact .container .contact {
+  width: 800px;
+  height: 100px;
+  margin-top: -16px;
+  margin-bottom: 80px;
+}
+#contact .container .contact p {
+  width: 800px;
+  height: 100px;
+  background: #eae1d5;
+  border-radius: 25px;
+}
+
+.one {
+  margin-top: 10px;
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  padding: 10px 10px;
+}
+.two {
+  margin-right: -40px;
+  margin-top: -90px;
+  width: 50%;
+  float: right;
+  padding: 15px 15px;
+  margin-bottom: -10px;
+}
+
+input[type="submit"] {
+  width: 90px;
+  float: right;
+  padding: 15px 15px;
+  margin: 15px 10px;
+  background: #000;
+  color: #eae1d5;
+  border: #eae1d5 bold 1px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: #d4d9e0;
+  color: #646d7c;
+}
+textarea {
+  height: 150px;
+}
+h2 {
+  color: #d4d9e0;
+  text-shadow: 2px 2px #000;
+  font-size: 28px;
+  text-align: center;
+}
+
+p {
+  padding: 15px 15px;
+  text-align: justify;
+}
+
+#footer  {
+  width: 90%;
+  margin: 0 auto;
+  padding: 140px;
+
+}
+#footer h1{
+  font-style: italic;
+  font-size: 38px;
+  color: #646d7c;
+  text-align: center;
+  margin-top: -48px;
+}
+q{
+  color: #646d7c;
+  text-align: center;
+  text-align: center;
+  margin-top: -48px;
+  
+
+}
