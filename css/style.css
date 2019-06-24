@@ -88,9 +88,9 @@ li a:hover {
 }
 #aboutus .container article {
   width: 350px;
-  height: 480px;
+  height: 520px;
   background: #f2f2f2;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 #aboutus .container article img {
   width: 350px;
@@ -177,7 +177,7 @@ li a:hover {
 }
 #aboutus .container article:nth-child(4),
 #aboutus .container article:nth-child(5) {
-  height: 600px;
+  height: 660px;
   width: 47%;
 }
 
@@ -223,8 +223,7 @@ li a:hover {
 }
 #section2 .container article {
   width: 250px;
-  height: 450px;
-
+  height: 470px;
   background: #f2f2f2;
 }
 
@@ -243,9 +242,10 @@ li a:hover {
 }
 
 #section2 .container article:nth-child(5) {
-  height: 600px;
+  height: 610px;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #section2 .container article button {
@@ -264,7 +264,7 @@ li a:hover {
   color: rgb(72, 73, 75);
 }
 
-#section2 .container article:nth-child(5) button{
+#section2 .container article:nth-child(5) button {
   background: #ffffff;
   color: #646d7c;
   border: solid #d4d9e0 1px;
@@ -273,5 +273,112 @@ li a:hover {
   width: 110px;
   margin: 15px 15px;
   font-size: 16px;
-  text-align: center; 
+  text-align: center;
+}
+
+#section2 .container article:nth-child(5) button:hover {
+  background: #f2f2f2;
+  color: rgb(72, 73, 75);
+}
+/* contacts form section */
+#contact {
+  background-image: url(../image/greenmountain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+#contact .container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contact .container .contact {
+  width: 800px;
+  height: 100px;
+  margin-top: -16px;
+  margin-bottom: 80px;
+}
+#contact .container .contact p {
+  width: 800px;
+  height: 100px;
+  background: #eae1d5;
+  border-radius: 25px;
+}
+
+.one {
+  margin-top: 10px;
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  padding: 10px 10px;
+}
+.two {
+  margin-right: -40px;
+  margin-top: -90px;
+  width: 50%;
+  float: right;
+  padding: 15px 15px;
+  margin-bottom: -10px;
+}
+
+input[type="submit"] {
+  width: 90px;
+  float: right;
+  padding: 15px 15px;
+  margin: 15px 10px;
+  background: #000;
+  color: #eae1d5;
+  border: #eae1d5 bold 1px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: #d4d9e0;
+  color: #646d7c;
+}
+textarea {
+  height: 150px;
+}
+h2 {
+  color: #d4d9e0;
+  text-shadow: 2px 2px #000;
+  font-size: 28px;
+  text-align: center;
+}
+
+p {
+  padding: 15px 15px;
+  text-align: justify;
+}
+
+#footer  {
+  width: 90%;
+  margin: 0 auto;
+  padding: 140px;
+
+}
+#footer h1{
+  font-style: italic;
+  font-size: 38px;
+  color: #646d7c;
+  text-align: center;
+  margin-top: -48px;
+}
+q{
+  color: #646d7c;
+  text-align: center;
+  text-align: center;
+  margin-top: -48px;
+  
+
 }
