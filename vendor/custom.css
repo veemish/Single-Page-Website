@@ -1,0 +1,18 @@
+*body {
+  overflow-x: hidden;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+ .parallax {
+  background-image: url(/image/forest.jpg);
+  height: 99vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
