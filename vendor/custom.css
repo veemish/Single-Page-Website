@@ -1,4 +1,7 @@
-*body {
+* {
+  box-sizing: border-box;
+}
+body {
   overflow-x: hidden;
 }
 
@@ -9,8 +12,8 @@
   z-index: 1030;
 }
 
-nav ul{
-    display: inline-block;
+nav ul {
+  display: inline-block;
 }
 
 .parallax {
@@ -23,7 +26,3 @@ nav ul{
   padding: 30px;
   color: antiquewhite;
 }
- 
-
-
-
