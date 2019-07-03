@@ -18,11 +18,9 @@ nav ul {
 
 .parallax {
   background-image: url(/image/forest.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-  padding: 30px;
-  color: antiquewhite;
+  height: 100vh;                                                                                                                                                                                                                                                                                                   vh;
+  
+  
 }
+
+ 
