@@ -18,9 +18,34 @@ nav ul {
 
 .parallax {
   background-image: url(/image/forest.jpg);
-  height: 100vh;                                                                                                                                                                                                                                                                                                   vh;
-  
-  
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 30px;
 }
 
- 
+.section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.parallax ::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: cover;
+  z-index: -1;
+}
+
+.b2 ::after {
+  background-image: url(/image/icedmountain.jpg);
+}
