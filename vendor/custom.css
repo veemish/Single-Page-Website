@@ -5,11 +5,16 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-fixed-top {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
+  padding: 20px;
 }
 
 nav ul {
@@ -26,11 +31,9 @@ nav ul {
   padding: 150px 0px 0px 10px;
   color: aliceblue;
 }
- 
-
 
 section .container-a {
-   margin: 0px -30px 0px -30px;
+  margin: 0px -30px 0px -30px;
   height: 100vh;
   width: 100vw;
 }
@@ -44,26 +47,61 @@ section .container-a {
   text-align: justify;
   padding: 150px 0px 0px 10px;
   color: aliceblue;
- 
 }
-
 
 section .container-b {
   margin: 0px -30px 0px -30px;
- height: 100vh;
- width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .parallaxc {
- background-image: url(/image/greenmountain.jpg);
- height: 100vh;
- background-size: cover;
- background-repeat: no-repeat;
- background-attachment: fixed;
- text-align: justify;
- padding: 150px 0px 0px 10px;
- color: aliceblue;
+  background-image: url(/image/mountainttop.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: justify;
+  padding: 150px 0px 0px 10px;
+  color: aliceblue;
+}
 
+footer.container-c {
+  height: 35vh;
+  width: 35vw;
+}
+
+.navbar-inverse .navbar-fixed-top {
+  display: table;
+}
+
+li > a {
+  display: table;
+  text-align: center;
+}
+
+.container-1 {
+  margin: 0 auto;
+  padding: 100px 100px 50px 100px;
+}
+.container-2 {
+  margin: 0 auto;
+  padding: 100px 100px 50px 100px;
+}
+
+button {
+  background-color: black;
+  padding: 15px;
+  margin: 5px;
+  border: solid 1px gainsboro;
+  
+}
+ul li button a {
+  color: whitesmoke;
 }
 
 
+
+.nav .navbar-nav >ul> li> button>a  :hover{
+ text-decoration: none;
+}
