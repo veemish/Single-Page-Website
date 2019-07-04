@@ -3,10 +3,15 @@
 }
 body {
   overflow-x: hidden;
+  
 }
 
+  body div section >h1 > h3 > h2 > p{
+  text-decoration: none;
+}
 html {
   scroll-behavior: smooth;
+  
 }
 
 .navbar-fixed-top {
@@ -71,15 +76,6 @@ footer.container-c {
   width: 35vw;
 }
 
-.navbar-inverse .navbar-fixed-top {
-  display: table;
-}
-
-li > a {
-  display: table;
-  text-align: center;
-}
-
 .container-1 {
   margin: 0 auto;
   padding: 100px 100px 50px 100px;
@@ -94,14 +90,41 @@ button {
   padding: 15px;
   margin: 5px;
   border: solid 1px gainsboro;
-  
 }
 ul li button a {
   color: whitesmoke;
 }
 
+li {
+  display: inline;
+}
 
+.navbar .nav,
+.navbar .nav > li {
+  float: none;
+  display: inline-block;
+  text-align: center;
+}
 
-.nav .navbar-nav >ul> li> button>a  :hover{
- text-decoration: none;
+.navbar .nav,
+.navbar .nav > li :hover {
+  text-decoration: none;
+  color: grey;
+  background-color: #1b1b1b;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  width: 110px;
+}
+
+.thumbnail :hover{
+  text-decoration: none;
+
+}
+.thumbnail{
+  background-color: #f2f3f2;
 }
