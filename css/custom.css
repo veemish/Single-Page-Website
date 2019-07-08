@@ -6,24 +6,50 @@ body {
   
 }
 
-  body div section >h1 > h3 > h2 > p{
-  text-decoration: none;
-}
+  
 html {
   scroll-behavior: smooth;
   
 }
 
-.navbar-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  padding: 20px;
+
+.container-fluid{
+ display: block;
+ text-decoration: none;
+  text-align: center;
+  background-color: #1b1b1b;
+  padding: 25px;
+
 }
 
-nav ul {
-  display: inline-block;
+.navbar {
+  min-height: 60px;
+}
+
+@media (min-width: 600px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.navbar-nav > li {
+    float: left;
+    border: solid #d5d1d1 1px;
+    margin: 12px 10px;
+    padding: 0 20px;
+    background-color: #353131
+    
+}
+
+.navbar-nav > li:hover{
+    background-color: #353131;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #d5d1d1;
 }
 
 .parallax {
@@ -85,46 +111,31 @@ footer.container-c {
   padding: 100px 100px 50px 100px;
 }
 
-button {
-  background-color: black;
-  padding: 15px;
-  margin: 5px;
-  border: solid 1px gainsboro;
-}
-ul li button a {
-  color: whitesmoke;
-}
 
-li {
-  display: inline;
-}
 
-.navbar .nav,
-.navbar .nav > li {
-  float: none;
-  display: inline-block;
-  text-align: center;
-}
 
-.navbar .nav,
-.navbar .nav > li :hover {
-  text-decoration: none;
-  color: grey;
-  background-color: #1b1b1b;
-}
 
-ul {
-  text-align: center;
-}
-
-li {
-  width: 110px;
-}
 
 .thumbnail :hover{
   text-decoration: none;
+  color: black;
 
 }
 .thumbnail{
   background-color: #f2f3f2;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
 }
+.thumbnail .caption{
+  color: black;
+}
+
+
+
+
+
+
+
+
+                
