@@ -22,9 +22,6 @@ html {
 
 }
 
-.navbar {
-  min-height: 60px;
-}
 
 @media (min-width: 600px) {
   .navbar-nav {
@@ -61,7 +58,7 @@ html {
   text-align: justify;
   padding: 150px 0px 0px 10px;
   color: aliceblue;
-  margin-top: -32px;
+  
 }
 
 section .container-a {
