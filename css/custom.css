@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-fluid {
+  text-align: center;
+  background-color: #1b1b1b;
+  padding: 25px;
+  margin-bottom: -19px;
+}
+
+.navbar-nav{
+  display: table;
+}
+@media (min-width: 600px) {
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.navbar-nav > li > button {
+  float: left;
+  border: solid #d5d1d1 1px;
+  margin: 12px 10px;
+  padding: 25px 20px;
+  background-color: #1b1b1b;
+  color: #f2f3f2;
+}
+.navbar-nav > button > a {
+  color: black;
+}
+
+.navbar-nav > li:hover {
+  background: #1b1b1b;
+}
+.navbar-nav {
+  margin-bottom: -16px;
+}
+
+ul li a {
+  color: white;
+  font-size: 15px;
+}
+ul li a:hover {
+  color: wheat;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.container-fluid ul li button a {
+  text-align: center;
+}
+
+.parallax {
+  background-image: url(/image/forest.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: justify;
+  padding: 150px 0px 0px 10px;
+  color: aliceblue;
+}
+
+section .container-a {
+  margin: 0px 0px 0px -30px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.parallaxb {
+  background-image: url(/image/icedmountain.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: justify;
+  padding: 150px 0px 0px 10px;
+  color: aliceblue;
+}
+
+section .container-b {
+  margin: 0px -30px 0px -30px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.parallaxc {
+  background-image: url(/image/mountainttop.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: justify;
+  padding: 150px 0px 0px 10px;
+  color: aliceblue;
+}
+
+footer.container-c {
+  height: 35vh;
+  width: 35vw;
+}
+
+.container-1 {
+  margin: 0 auto;
+  padding: 100px 100px 50px 100px;
+}
+.container-2 {
+  margin: 0 auto;
+  padding: 100px 100px 50px 100px;
+}
+
+.thumbnail :hover {
+  text-decoration: none;
+  color: black;
+}
+.thumbnail {
+  background-color: #f2f3f2;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+}
+.thumbnail .caption {
+  color: black;
+}

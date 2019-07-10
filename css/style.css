@@ -329,7 +329,7 @@ li a:hover {
   padding: 15px 15px;
   margin-bottom: -10px;
 }
-
+rrj,
 input[type="submit"] {
   width: 90px;
   float: right;
@@ -361,24 +361,22 @@ p {
   text-align: justify;
 }
 
-#footer  {
+#footer {
   width: 90%;
   margin: 0 auto;
   padding: 140px;
-
 }
-#footer h1{
+#footer h1 {
   font-style: italic;
   font-size: 38px;
   color: #646d7c;
   text-align: center;
   margin-top: -48px;
 }
-q{
+q {
   color: #646d7c;
   text-align: center;
   text-align: center;
   margin-top: -48px;
-  
-
 }
+
